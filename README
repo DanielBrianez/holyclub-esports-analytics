@@ -1,0 +1,139 @@
+# 🏆 HolyClub Esports Analytics
+
+Analytics project for HolyClub, a Counter-Strike 2 competitive platform focused on matchmaking, championships, player behavior, anti-cheat signals and operational intelligence.
+
+This project aims to explore and document the HolyClub database structure, build analytical queries and prepare the foundation for future dashboards using SQL, Python and Power BI.
+
+---
+
+# 🚀 Technologies Used
+
+- Python
+- Pandas
+- MySQL
+- Azure Database
+- SQL
+- dotenv
+- Data Analysis
+- Esports Analytics
+
+---
+
+# 📂 Project Structure
+
+```bash
+holyclub-esports-analytics/
+│
+├── docs/
+│   └── database_schema.csv
+│
+├── queries/
+│   └── database_schema.sql
+│
+├── database_explorer.py
+├── README.md
+├── .gitignore
+└── LICENSE
+```
+
+---
+
+# 📊 Current Features
+
+- Secure database connection using environment variables
+- MySQL database exploration
+- Automated schema extraction
+- External SQL query modularization
+- Export of database schema documentation
+- Initial mapping of HolyClub analytical domains
+
+---
+
+# 🧠 Analytical Domains
+
+The database contains structures related to:
+
+- Users and players
+- Matchmaking
+- Matches and match stats
+- Championships
+- Anti-cheat cases and signals
+- Support tickets
+- Lobbies and parties
+- Servers
+- HolyCoins economy
+- Notifications and engagement
+- Platform operations
+
+---
+
+# 📌 First Discovery
+
+The first exploration identified multiple relevant tables, including:
+
+- `users`
+- `match_games`
+- `match_player_stats`
+- `matchmaking_queues`
+- `matchmaking_queue_entries`
+- `championships`
+- `championship_matches`
+- `support_tickets`
+- `lobbies`
+- `servers`
+- `holycoins_transactions`
+- `ac_cases`
+- `ac_signals`
+- `ac_evidence`
+- `ac_ai_analyses`
+
+---
+
+# 🔐 Security
+
+Database credentials are handled through a local `.env` file and must not be committed to the repository.
+
+Required `.env` variables:
+
+```env
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
+```
+
+---
+
+# ▶️ How to Run
+
+## Install dependencies
+
+```bash
+pip install pandas mysql-connector-python python-dotenv
+```
+
+## Run database explorer
+
+```bash
+py database_explorer.py
+```
+
+---
+
+# 📌 Next Steps
+
+- Map key tables and relationships
+- Build database documentation
+- Identify primary business KPIs
+- Create SQL queries for player, match and championship analytics
+- Build HolyClub Intelligence Dashboard
+- Develop Power BI visualizations
+- Define growth, engagement and operational metrics
+
+---
+
+# 👨‍💻 Author
+
+Daniel Nascimento
+
+[LinkedIn](https://www.linkedin.com/in/daniel-nascimento-2729941a8/)
