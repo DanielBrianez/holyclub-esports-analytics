@@ -1,99 +1,192 @@
 # 🏆 HolyClub Esports Analytics
 
-Analytics project for HolyClub, a Counter-Strike 2 competitive platform focused on matchmaking, championships, player behavior, anti-cheat signals and operational intelligence.
+A data analytics project built on top of a real-world esports platform database.
 
-This project aims to explore and document the HolyClub database structure, build analytical queries and prepare the foundation for future dashboards using SQL, Python and Power BI.
+This project explores competitive matchmaking, player performance, championships, platform operations and community behavior using SQL, Python, MySQL and Business Intelligence concepts.
 
----
-
-# 🚀 Technologies Used
-
-- Python
-- Pandas
-- MySQL
-- Azure Database
-- SQL
-- dotenv
-- Data Analysis
-- Esports Analytics
+The goal is to transform raw operational data into actionable insights, KPIs and dashboards that support strategic decision-making within the HolyClub ecosystem.
 
 ---
 
-# 📂 Project Structure
+## 🎮 About HolyClub
+
+HolyClub is a competitive Counter-Strike 2 platform that provides:
+
+* Competitive Matchmaking
+* Championships and Tournaments
+* Player Rankings and ELO System
+* HolyCoins Economy
+* Community Features
+* Support and Moderation Systems
+* Anti-Cheat and Fair Play Monitoring
+
+This project leverages real production data to perform analytical exploration and generate business insights.
+
+---
+
+## 🚀 Tech Stack
+
+### Data Analysis
+
+* Python
+* Pandas
+
+### Database
+
+* MySQL
+* Azure Database for MySQL
+* SQLAlchemy
+
+### Business Intelligence
+
+* Power BI
+* KPI Analysis
+* Product Analytics
+* Operational Analytics
+
+### Development
+
+* Git
+* GitHub
+* dotenv
+
+---
+
+## 📂 Project Structure
 
 ```bash
-holyclub-esports-analytics/
+HolyClub-Esports-Analytics/
 │
 ├── docs/
-│   └── database_schema.csv
+│   ├── database_schema.csv
+│   └── documentation/
+│
+├── insights/
 │
 ├── queries/
-│   └── database_schema.sql
+│   ├── exploratory/
+│   └── analytics/
+│       ├── matches/
+│       ├── players/
+│       └── operational/
 │
-├── database_explorer.py
-├── README.md
+├── scripts/
+│
+├── .env
 ├── .gitignore
+├── README.md
 └── LICENSE
 ```
 
 ---
 
-# 📊 Current Features
+## 📊 Current Analytics
 
-- Secure database connection using environment variables
-- MySQL database exploration
-- Automated schema extraction
-- External SQL query modularization
-- Export of database schema documentation
-- Initial mapping of HolyClub analytical domains
+### Match Analytics
 
----
+* Match Completion Rate
+* Match Cancellation Rate
+* Most Played Maps
+* Average Match Duration
+* Match Status Distribution
 
-# 🧠 Analytical Domains
+### Player Analytics
 
-The database contains structures related to:
+* Most Active Players
+* Total Matches by Player
+* MVP Rankings
+* Kill Rankings
+* Average Player Rating
 
-- Users and players
-- Matchmaking
-- Matches and match stats
-- Championships
-- Anti-cheat cases and signals
-- Support tickets
-- Lobbies and parties
-- Servers
-- HolyCoins economy
-- Notifications and engagement
-- Platform operations
+### Operational Analytics
+
+* Queue Analysis
+* Server Utilization
+* Platform Performance Metrics
 
 ---
 
-# 📌 First Discovery
+## 🔎 Key Findings
 
-The first exploration identified multiple relevant tables, including:
+### Match Completion
 
-- `users`
-- `match_games`
-- `match_player_stats`
-- `matchmaking_queues`
-- `matchmaking_queue_entries`
-- `championships`
-- `championship_matches`
-- `support_tickets`
-- `lobbies`
-- `servers`
-- `holycoins_transactions`
-- `ac_cases`
-- `ac_signals`
-- `ac_evidence`
-- `ac_ai_analyses`
+Approximately 90% of matches are completed successfully.
+
+### Most Played Maps
+
+The platform shows a strong preference for:
+
+1. Mirage
+2. Dust2
+3. Nuke
+
+Mirage represents the largest share of competitive matches played.
+
+### Match Duration
+
+Current average match duration:
+
+* ~25.5 minutes
+
+This metric may indicate specific matchmaking patterns, surrender rates or competitive behaviors requiring further investigation.
 
 ---
 
-# 🔐 Security
+## 🧠 Skills Demonstrated
 
-Database credentials are handled through a local `.env` file and must not be committed to the repository.
+* SQL Analytics
+* Relational Database Exploration
+* Schema Discovery
+* Data Modeling
+* Business Intelligence
+* KPI Design
+* Product Analytics
+* Operational Analytics
+* Python Automation
+* Data Documentation
+* Query Modularization
+* Azure Database Connectivity
 
-Required `.env` variables:
+---
+
+## 🎯 Roadmap
+
+### Phase 1 — Database Discovery
+
+* [x] Connect to Azure MySQL Database
+* [x] Extract Database Schema
+* [x] Identify Core Entities
+* [x] Build Analytics Repository
+
+### Phase 2 — Analytics Development
+
+* [x] Match Analytics
+* [x] Player Analytics
+* [ ] Championship Analytics
+* [ ] Queue Analytics
+* [ ] HolyCoins Analytics
+* [ ] Support Analytics
+
+### Phase 3 — Business Intelligence
+
+* [ ] KPI Dashboard
+* [ ] Power BI Integration
+* [ ] Executive Dashboard
+* [ ] Operational Dashboard
+
+### Phase 4 — Advanced Analytics
+
+* [ ] Player Segmentation
+* [ ] Retention Analysis
+* [ ] ELO Analytics
+* [ ] Championship Performance Analysis
+* [ ] Anti-Cheat Analytics
+
+---
+
+## 🔐 Security
+
+Database credentials are stored using environment variables and are never committed to the repository.
 
 ```env
 DB_HOST=
@@ -104,36 +197,10 @@ DB_NAME=
 
 ---
 
-# ▶️ How to Run
-
-## Install dependencies
-
-```bash
-pip install pandas mysql-connector-python python-dotenv
-```
-
-## Run database explorer
-
-```bash
-py database_explorer.py
-```
-
----
-
-# 📌 Next Steps
-
-- Map key tables and relationships
-- Build database documentation
-- Identify primary business KPIs
-- Create SQL queries for player, match and championship analytics
-- Build HolyClub Intelligence Dashboard
-- Develop Power BI visualizations
-- Define growth, engagement and operational metrics
-
----
-
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 Daniel Nascimento
 
-[LinkedIn](https://www.linkedin.com/in/daniel-nascimento-2729941a8/)
+Fraud Prevention Analyst | Data Analytics Enthusiast | Business Intelligence
+
+Currently building analytical solutions using SQL, Python, Power BI and real-world datasets.
