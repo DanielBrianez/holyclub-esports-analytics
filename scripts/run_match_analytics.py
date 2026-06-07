@@ -23,7 +23,7 @@ engine = create_engine(
 
 
 query = carregar_query(
-    "queries/analytics/players/top_killers.sql"
+    "../queries/analytics/matches/[query_name].sql"
 )
 
 df = pd.read_sql(
