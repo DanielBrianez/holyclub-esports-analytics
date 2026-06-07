@@ -5,12 +5,10 @@ SELECT
         u.steam_persona_name,
         u.id
     ) AS player_name,
-    ROUND(AVG(mps.rating), 2) AS avg_rating,
     COUNT(*) AS matches_played
 FROM match_player_stats mps
 INNER JOIN users u
     ON mps.user_id = u.id
 GROUP BY player_name
-HAVING COUNT(*) >= 5
-ORDER BY avg_rating DESC
+ORDER BY matches_played DESC
 LIMIT 10;

@@ -68,7 +68,7 @@ HolyClub-Esports-Analytics/
 │   └── analytics/
 │       ├── matches/
 │       ├── players/
-│       └── operational/
+│       └── infrastructure/
 │
 ├── scripts/
 │
