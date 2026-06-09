@@ -1,41 +1,57 @@
-# users
+# Database Mapping
 
-Stores platform user information.
+## Core Entities
 
-Important columns:
-- id
-- username
-- created_at
+### users
+
+Stores player profile information.
+
+Key columns:
+
+- id (PK)
+- display_name
 - elo
-- status
+- cs2_nickname
+- created_at
 
 ---
 
-# match_games
+### match_player_stats
 
-Stores competitive match information.
+Stores player performance metrics.
 
-Key analytical columns:
-- id: unique match identifier
-- started_at: match start timestamp
-- ended_at: match end timestamp
-- status: current match status
-- selected_map: selected CS2 map
-- score_team_a: final score for team A
-- score_team_b: final score for team B
-- server_id: server used in the match
-- queue_id: matchmaking queue
-- mvp_user_id: match MVP
-- has_overtime: indicates overtime
-- elo_deltas: ELO variation after match
+Key columns:
 
-Possible KPIs:
-- Total matches
-- Completed matches
-- Matches by status
-- Most played maps
-- Average match duration
-- Overtime rate
-- Average score by team
-- Matches by server
-- MVP ranking
+- id (PK)
+- user_id (FK)
+- match_id (FK)
+- kills
+- deaths
+- assists
+- rating
+
+---
+
+### match_games
+
+Stores match information.
+
+Key columns:
+
+- id (PK)
+- selected_map
+- status
+- score_team_a
+- score_team_b
+
+---
+
+## Relationships
+
+users.id
+↓
+match_player_stats.user_id
+
+match_games.id
+↓
+match_player_stats.match_id

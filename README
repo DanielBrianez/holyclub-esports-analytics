@@ -2,49 +2,49 @@
 
 A data analytics project built on top of a real-world esports platform database.
 
-This project explores competitive matchmaking, player performance, championships, platform operations and community behavior using SQL, Python, MySQL and Business Intelligence concepts.
+This project explores competitive matchmaking, player performance, ranking systems, platform operations and user behavior using SQL, Python, MySQL and Business Intelligence concepts.
 
-The goal is to transform raw operational data into actionable insights, KPIs and dashboards that support strategic decision-making within the HolyClub ecosystem.
+The objective is to transform operational data into actionable insights, KPIs and dashboards that support data-driven decision-making within the HolyClub ecosystem.
 
 ---
 
-## 🎮 About HolyClub
+# 🎮 About HolyClub
 
 HolyClub is a competitive Counter-Strike 2 platform that provides:
 
 * Competitive Matchmaking
 * Championships and Tournaments
-* Player Rankings and ELO System
+* ELO Ranking System
 * HolyCoins Economy
 * Community Features
 * Support and Moderation Systems
 * Anti-Cheat and Fair Play Monitoring
 
-This project leverages real production data to perform analytical exploration and generate business insights.
+This project uses real production data to perform analytical exploration and business intelligence initiatives.
 
 ---
 
-## 🚀 Tech Stack
+# 🚀 Tech Stack
 
-### Data Analysis
+## Data Analysis
 
 * Python
 * Pandas
 
-### Database
+## Database
 
 * MySQL
 * Azure Database for MySQL
 * SQLAlchemy
 
-### Business Intelligence
+## Business Intelligence
 
 * Power BI
 * KPI Analysis
 * Product Analytics
 * Operational Analytics
 
-### Development
+## Development
 
 * Git
 * GitHub
@@ -52,22 +52,34 @@ This project leverages real production data to perform analytical exploration an
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```bash
 HolyClub-Esports-Analytics/
+│
+├── dashboard/
+│
+├── dados/
 │
 ├── docs/
 │   ├── database_schema.csv
 │   └── documentation/
 │
 ├── insights/
+│   ├── match_insights.md
+│   ├── player_insights.md
+│   ├── map_insights.md
+│   └── elo_insights.md
 │
 ├── queries/
 │   ├── exploratory/
+│   │   ├── preview_table.sql
+│   │   └── table_columns.sql
+│   │
 │   └── analytics/
-│       ├── matches/
 │       ├── players/
+│       ├── maps/
+│       ├── matches/
 │       └── infrastructure/
 │
 ├── scripts/
@@ -80,59 +92,55 @@ HolyClub-Esports-Analytics/
 
 ---
 
-## 📊 Current Analytics
+# 📊 Analytics Modules
 
-### Match Analytics
+## Player Analytics
+
+* Top Killers
+* MVP Ranking
+* K/D Ratio
+* Average Rating
+* Matches Played
+* ELO Analytics
+
+## Match Analytics
 
 * Match Completion Rate
 * Match Cancellation Rate
-* Most Played Maps
-* Average Match Duration
 * Match Status Distribution
+* Average Match Duration
+* Average Map Duration
 
-### Player Analytics
+## Map Analytics
 
-* Most Active Players
-* Total Matches by Player
-* MVP Rankings
-* Kill Rankings
-* Average Player Rating
+* Most Played Maps
+* Kills by Map
+* Average Rating by Map
+* Average K/D by Map
 
-### Operational Analytics
+## Infrastructure Analytics
 
-* Queue Analysis
-* Server Utilization
-* Platform Performance Metrics
-
----
-
-## 🔎 Key Findings
-
-### Match Completion
-
-Approximately 90% of matches are completed successfully.
-
-### Most Played Maps
-
-The platform shows a strong preference for:
-
-1. Mirage
-2. Dust2
-3. Nuke
-
-Mirage represents the largest share of competitive matches played.
-
-### Match Duration
-
-Current average match duration:
-
-* ~25.5 minutes
-
-This metric may indicate specific matchmaking patterns, surrender rates or competitive behaviors requiring further investigation.
+* Match Distribution by Server
+* Platform Usage Metrics
 
 ---
 
-## 🧠 Skills Demonstrated
+# 📁 Insights Repository
+
+Analytical findings and business observations are documented separately inside the `insights/` directory.
+
+Current reports:
+
+* Player Analytics Insights
+* Match Analytics Insights
+* Map Analytics Insights
+* ELO Analytics Insights
+
+This separation allows the repository to distinguish analytical logic (queries and scripts) from business conclusions (insights).
+
+---
+
+# 🧠 Skills Demonstrated
 
 * SQL Analytics
 * Relational Database Exploration
@@ -146,45 +154,48 @@ This metric may indicate specific matchmaking patterns, surrender rates or compe
 * Data Documentation
 * Query Modularization
 * Azure Database Connectivity
+* Data-Driven Decision Making
 
 ---
 
-## 🎯 Roadmap
+# 🎯 Roadmap
 
-### Phase 1 — Database Discovery
+## Phase 1 — Database Discovery
 
 * [x] Connect to Azure MySQL Database
 * [x] Extract Database Schema
 * [x] Identify Core Entities
 * [x] Build Analytics Repository
 
-### Phase 2 — Analytics Development
+## Phase 2 — Analytics Development
 
 * [x] Match Analytics
 * [x] Player Analytics
+* [x] Map Analytics
+* [x] ELO Analytics
 * [ ] Championship Analytics
 * [ ] Queue Analytics
 * [ ] HolyCoins Analytics
 * [ ] Support Analytics
 
-### Phase 3 — Business Intelligence
+## Phase 3 — Business Intelligence
 
 * [ ] KPI Dashboard
 * [ ] Power BI Integration
 * [ ] Executive Dashboard
 * [ ] Operational Dashboard
 
-### Phase 4 — Advanced Analytics
+## Phase 4 — Advanced Analytics
 
 * [ ] Player Segmentation
 * [ ] Retention Analysis
-* [ ] ELO Analytics
 * [ ] Championship Performance Analysis
 * [ ] Anti-Cheat Analytics
+* [ ] Predictive Analytics
 
 ---
 
-## 🔐 Security
+# 🔐 Security
 
 Database credentials are stored using environment variables and are never committed to the repository.
 
@@ -197,7 +208,7 @@ DB_NAME=
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 Daniel Nascimento
 
